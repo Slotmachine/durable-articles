@@ -134,64 +134,66 @@
 									</select>
 								</div>
 							</div>
-							<div class="col-lg-4  col-md-6 col-sm-6 mt-10">
+							<div class="col-lg-5  col-md-6 col-sm-6 mt-10">
 								<input type="text" name="productname" placeholder="ชื่อครุภัณฑ์"
 									onfocus="this.placeholder = ''" onblur="this.placeholder = 'ชื่อครุภัณฑ์'" required
 									class="single-input">
 							</div>
+							<div class="col-lg-2  col-md-6 col-sm-6 mt-10"></div>
 							<div class="col-lg-4  col-md-6 col-sm-6 mt-10"></div>
-							<div class="col-lg-4  col-md-6 col-sm-6 mt-10"></div>
-							<div class="col-lg-4  col-md-6 col-sm-6 mt-10">
+							<div class="col-lg-5  col-md-6 col-sm-6 mt-10">
 								<input type="text" name="generation" placeholder="รุ่น หรือ ยี่ห้อ"
 									onfocus="this.placeholder = ''" onblur="this.placeholder = 'รุ่น หรือ ยี่ห้อ'"
 									required class="single-input">
 							</div>
+							<div class="col-lg-2  col-md-6 col-sm-6 mt-10"></div>
 							<div class="col-lg-4  col-md-6 col-sm-6 mt-10"></div>
-							<div class="col-lg-4  col-md-6 col-sm-6 mt-10"></div>
-							<div class="col-lg-1  col-md-6 col-sm-6 mt-10">
+							<div class="col-lg-1  col-md-6 col-sm-2 mt-10">
 								<input type="tel" name="day" placeholder="วันที่" onfocus="this.placeholder = ''"
 									onblur="this.placeholder = 'วันที่'" required class="single-input" maxlength="2">
 							</div>
 							<div class="col-lg-2  col-md-6 col-sm-6 mt-10">
 								<input type="text" name="month" placeholder="เดือน" onfocus="this.placeholder = ''"
-									onblur="this.placeholder = 'เดือน'" required class="single-input">
+									onblur="this.placeholder = 'เดือน'" required class="single-input" maxlength="10">
 							</div>
-							<div class="col-lg-1  col-md-6 col-sm-6 mt-10">
+							<div class="col-lg-2  col-md-6 col-sm-6 mt-10">
 								<input type="tel" name="year" placeholder="ปี" onfocus="this.placeholder = ''"
-									onblur="this.placeholder = 'ปี'" required class="single-input">
+									onblur="this.placeholder = 'ปี'" required class="single-input" maxlength="4">
 							</div>
+							<div class="col-lg-2  col-md-6 col-sm-6 mt-10"></div>
 							<div class="col-lg-4  col-md-6 col-sm-6 mt-10"></div>
-							<div class="col-lg-4  col-md-6 col-sm-6 mt-10"></div>
-							<div class="col-lg-4  col-md-6 col-sm-6 mt-10">
+							<div class="col-lg-5  col-md-6 col-sm-6 mt-10">
 								<input type="text" name="last_name" placeholder="เลขครุภัณฑ์"
 									onfocus="this.placeholder = ''" onblur="this.placeholder = 'เลขครุภัณฑ์'" required
 									class="single-input">
 							</div>
+							<div class="col-lg-2  col-md-6 col-sm-6 mt-10"></div>
 							<div class="col-lg-4  col-md-6 col-sm-6 mt-10"></div>
-							<div class="col-lg-4  col-md-6 col-sm-6 mt-10"></div>
-							<div class="input-group-icon col-lg-4  col-md-6 col-sm-6 mt-10">
+							<div class="input-group-icon col-lg-5  col-md-6 col-sm-6 mt-10">
 								<div class="icon"><i class="fa fa-thumb-tack" aria-hidden="true"></i></div>
 								<input type="text" name="address" placeholder="สถานที่ปัจจุบัน"
 									onfocus="this.placeholder = ''" onblur="this.placeholder = 'สถานที่ปัจจุบัน'"
 									required class="single-input">
 							</div>
+							<div class="col-lg-2  col-md-6 col-sm-6 mt-10"></div>
 							<div class="col-lg-4  col-md-6 col-sm-6 mt-10"></div>
-							<div class="col-lg-4  col-md-6 col-sm-6 mt-10"></div>
-							<div class="col-lg-4  col-md-6 col-sm-6 mt-10">
-								<input type="text" name="last_name" placeholder="เลขครุภัณฑ์"
-									onfocus="this.placeholder = ''" onblur="this.placeholder = 'เลขครุภัณฑ์'" required
-									class="single-input">
-							</div>
-							<div class="col-lg-4  col-md-6 col-sm-6 mt-10"></div>
-							<div class="col-lg-4  col-md-6 col-sm-6 mt-10"></div>
-							<div class="col-lg-4  col-md-6 col-sm-6 mt-10">
-								<div class="custom-file">
-									<input type="file" class="custom-file-input" id="customFile">
-									<label class="custom-file-label" for="customFile">Choose file</label>
+							<div class="col-lg-5  col-md-6 col-sm-6 mt-10">
+								<div class="input-group">
+									<span class="input-group-btn">
+										<span class="btn btn-primary"
+											onclick="$(this).parent().find('input[type=file]').click();">อัพเดทรูปภาพ</span>
+										<input name="uploaded_file"
+											onchange="$(this).parent().parent().find('.form-control').html($(this).val().split(/[\\|/]/).pop());"
+											style="display: none;" type="file">
+									</span>
+									<span class="form-control"></span>
 								</div>
-
 							</div>
 						</div>
+					</div>
+					<div class="addcenter">
+						<button type="button" class="btn btn-success addcenterbutton">บันทึกข้อมูล</button>
+						<button type="button" class="btn btn-danger	addcenterbutton">ล้างข้อมูล</button>
 					</div>
 				</form>
 			</div>

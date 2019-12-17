@@ -6118,4 +6118,45 @@ h5 {
   margin-right: 25px;
   margin-bottom: 80px;
 }
+
+
+
+
+.btn-primary {
+  color: #fff;
+  background-color: #00a9ec;
+  border-color: #00a9ec;
+}
+
+.btn-primary:hover {
+  background: #af0699;
+  color: #fff;
+  border-color: #af0699;
+}
+
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
+
+.addcenter {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.addcenterbutton {
+  margin: 10px;
+}
+
 /*Resize the wrap to see the search bar change!*/
